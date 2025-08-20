@@ -1,0 +1,43 @@
+footer {
+    align-self: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 60%;
+}
+
+footer h2 {
+    margin-bottom: 40px;
+}
+
+footer .personal-info {
+    display: grid;
+    grid-template-columns: 30px 10px 230px;
+    grid-template-rows: repeat(3, 30px);
+    gap: 2px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    justify-items: start;
+}
+
+footer .personal-info .span-info {
+    grid-column: 1;
+    justify-self: center;
+}
+
+footer .personal-info span img {
+    width: 20px;
+    height: 20px;
+}
+
+footer .personal-info .span-semicolon {
+    grid-column: 2;
+
+}
+
+footer .personal-info a {
+    font-weight: 800;
+}

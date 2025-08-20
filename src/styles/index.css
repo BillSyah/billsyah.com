@@ -1,0 +1,238 @@
+:root {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    --anchor-font-size-link: 1.2rem;
+    --font-size: 1.1rem;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.83);
+    font-size: var(--font-size);
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Reset Basic Styling P tag*/
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Parent Container Styling Starts */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(248, 241, 230, 0.98);
+    color: rgba(0, 0, 0, 0.83);
+    width: 100vw;
+    min-height: 75vh;
+    max-height: 95vh;
+    display: flex;
+    justify-content: center;
+}
+
+body .wrapper {
+    margin: 0.5rem 0.5rem;
+    padding: 30px 10% 30px 10%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+/* Parent Container Styling Ends */
+
+/* Header Styling Starts */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 31px;
+    margin-right: 20px;
+    gap: 170px;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-size: 28px;
+}
+
+/* Logo Container Animation Starts */
+header .logo .heading-first-name {
+    margin: 0;
+    transition: padding 0.8s;
+}
+
+header .logo .heading-last-name {
+    margin: 0;
+    padding: 0 0 0 100px;
+    transition: padding 0.8s;
+}
+
+header .logo .heading-first-name:hover {
+    padding: 0 0 0 280px;
+}
+
+header .logo .heading-last-name:hover {
+    padding: 0 150px 0 0;
+}
+/* Logo Container Animation Ends */
+
+header .heading-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-width: 50px;
+    font-size: var(--anchor-font-size-link);
+    gap: 30px;
+    bottom: 20px;
+    flex-wrap: wrap;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+header .heading-nav .nav-wrapper {
+    position: relative;
+    height: 30px;
+    top: 10px;
+    right: 50px;
+}
+
+header .heading-nav .nav-wrapper .navigation {
+    position: relative;
+    bottom: 0;
+    transition: bottom 0.2s ease;
+    padding-bottom: 2px;
+}
+
+header .heading-nav .nav-wrapper:hover .navigation {
+    position: relative;
+    bottom: 7px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.83);
+}
+
+header .heading-nav .nav-wrapper.home .navigation{
+    box-shadow: 0 2px rgba(0, 0, 0, 0.83);
+}
+/* Header Container Styling Ends */
+
+/* Main Container Styling Starts */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 20px;
+    margin-bottom: 0px;
+    width: 50%;
+}
+
+main .container-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+main .container-profile img {
+    position: relative;
+    align-self: center;
+    bottom: 0;
+    width: 327px;
+    transition: bottom 0.4s;
+}
+
+main .container-profile #my-quote-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+main .container-profile h4 {
+    text-align: end;
+    display: inline;
+}
+
+main .container-profile img:hover {
+    position: relative;
+    bottom: 10px;
+}
+
+main .container-profile .my-quote .quotation-credit {
+    display: block;
+    text-align: end;
+    margin-top: 5px;
+}
+
+main .container-introduction {
+    display: flex;
+    text-align: start;
+}
+
+main .container-introduction .container-paragraph {
+    padding: 20px;
+    font-size: var(--font-size);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+main .container-introduction .container-paragraph p {
+}
+
+main .container-introduction .container-paragraph a {
+    display: inline;
+    font-weight: 900;
+    font-size: var(--anchor-font-size-link);
+}
+
+
+main section:hover {
+    background-color: #EAEEDC;
+}
+
+/* Footer Container Styling Starts */
+footer {
+    align-self: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 70%;
+}
+
+footer h2 {
+    margin-bottom: 25px;
+}
+
+footer .personal-info {
+    display: grid;
+    grid-template-columns: 20px 10px 230px;
+    grid-template-rows: repeat(3, 30px);
+    gap: 2px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    justify-items: start;
+}
+
+footer .personal-info .span-info {
+    grid-column: 1;
+    justify-self: center;
+}
+
+footer .personal-info span img {
+    width: 20px;
+    height: 20px;
+}
+
+footer .personal-info .span-semicolon {
+    grid-column: 2;
+
+}
+
+footer .personal-info a {
+    font-weight: 800;
+}
+
+/* Footer Container Styling Ends */
