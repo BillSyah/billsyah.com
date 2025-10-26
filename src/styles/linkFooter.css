@@ -1,0 +1,73 @@
+footer {
+    align-self: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    width: 70%;
+}
+
+footer h2 {
+    margin-bottom: 25px;
+}
+
+footer .personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+footer .personal-info a {
+    display: flex;
+    gap: 3px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: transform 0.3s;
+}
+
+
+footer .personal-info a:hover {
+    background-color: #DAE2D3;
+    color: rgb(13, 17, 255);
+    transform: scale(1.04);
+    transition: transform 0.3s;
+    /* padding: add more animation for this so when user hover they see something moving  */
+}
+
+footer .personal-info img {
+    width: 20px;
+    height: 20px;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+footer .personal-info a {
+    font-weight: 800;
+}
+
+@media (max-width: 500px) {
+    footer {
+        width: 100%;
+        margin-top: 5px;
+        padding-top: 16px;
+    }
+
+    footer h2 {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    footer a {
+        text-align: center;
+        width: auto;
+        height: 21px;
+    }
+
+    footer a .name {
+        transform: translateY(1px);
+    }
+}

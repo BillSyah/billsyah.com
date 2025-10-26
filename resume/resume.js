@@ -1,24 +1,12 @@
-import PersonalLink from '../src/components/PersonalLink'
+import LinkFooter from '../src/components/LinkFooter'
 import ResumeDownload from '../src/components/ResumeDownload'
+import Heading from '../src/components/Heading'
+import '../src/styles/heading.css'
 import '../src/styles/resume.css'
 
 document.querySelector('#app').innerHTML = `
     <div class="wrapper">
-        <header>
-            <!-- Start Header  -->
-            <div class="logo">
-                <!-- container for logo -->
-                <h1 class="heading-first-name">Bill</h1>
-                <h1 class="heading-last-name">Syahputra</h1>
-                <!-- end logo container -->
-            </div>
-
-            <nav class="heading-nav">
-                <nav class="nav-wrapper home"><a class="navigation" href="../../../index.html">Home</a></nav>
-                <nav class="nav-wrapper resume"><a class="navigation" href="#">Resume</a></nav>
-            </nav>
-            <!-- End Header -->
-        </header>
+        ${Heading()}
 
         <main>
             <!-- Start Main  -->
@@ -35,8 +23,14 @@ document.querySelector('#app').innerHTML = `
             <!-- Objective -->
             <section class="objective">
                 <h2>Career Objective</h2>
-                <p>I am a Senior at Oakland University studying for a B.S. in Computer Science. My passion lies in web development. I have also developed interest in mobile app development because it allows me to express my creativity. I enjoy working with user interface and experience design, and understanding where and how to store data efficiently. </p>
-            </section>
+                <p> 
+                    A recent graduate from Oakland University with B.S. in Computer Science. During school, 
+                    I developed interest and build my skill towards full-stack web development. I’m pursuing
+                    the AWS Solutions Architect certification to expand my expertise in designing scalable 
+                    and secure applications. I value my creativity to solve problems, collaborate with team,
+                    and building solution that benefits both the user and organizations effectively 
+                </p>
+                </section>
 
             <!-- Professional Experience -->
             <section class="professional-experience">
@@ -108,7 +102,7 @@ document.querySelector('#app').innerHTML = `
             <!-- End Main -->
         </main>
         
-        ${PersonalLink()}
+        ${LinkFooter()}
        
 
         </div>

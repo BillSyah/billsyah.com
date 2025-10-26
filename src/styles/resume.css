@@ -9,7 +9,6 @@ a {
     font-size: var(--font-size);
     text-decoration: none;
     display: inline-block;
-    text-align: start;
 }
 
 /* reset basic styling */
@@ -32,11 +31,6 @@ body {
 }
 
 body .wrapper {
-    /* height: 95vh;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(233, 233, 233, 1);
-    overflow: scroll; */
     margin: 0.5rem;
     padding: 15px 15%;
     height: 95%;
@@ -44,81 +38,9 @@ body .wrapper {
     flex-direction: column;
     overflow: auto;
 }
+
 /* Parent Container Styling Ends */
 
-
-/* Header Container Styling Starts */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-    margin: 50px 0 60px 0;
-}
-
-header .logo {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    font-size: 14px;
-}
-
-/* Logo Container Animation Starts */
-header .logo .heading-first-name {
-    width: 100%;
-    margin: 0;
-    padding-left: 0;
-    transition: 0.8s;
-}
-
-header .logo .heading-first-name:hover {
-    width: 100%;
-    padding-left: 140px;
-}
-
-header .logo .heading-last-name {
-    margin: 0;
-    padding: 0 0 0 50px;
-    transition: padding 0.8s;
-}
-
-header .logo .heading-last-name:hover {
-    padding: 0 75px 0 0;
-}
-
-header .heading-nav {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    min-width: 50px;
-    font-size: var(--anchor-font-size-link);
-    gap: 30px;
-    color: rgba(0, 0, 0, 0.8);
-}
-
-header .heading-nav .nav-wrapper {
-    position: relative;
-    height: 30px;
-    top: 10px;
-}
-
-header .heading-nav .nav-wrapper .navigation {
-    position: relative;
-    bottom: 0;
-    transition: bottom 0.2s ease;
-    padding-bottom: 2px;
-}
-
-header .heading-nav .nav-wrapper:hover .navigation {
-    position: relative;
-    bottom: 7px;
-    box-shadow: 0 2px rgba(0, 0, 0, 0.83);
-}
-
-header .heading-nav .nav-wrapper.resume .navigation{
-    box-shadow: 0 2px rgba(0, 0, 0, 0.83);
-}
-/* Header Container Styling Ends */
 
 /* Main Container Styling Starts */
 
@@ -143,9 +65,6 @@ main li {
     text-align: start;
 }
 
-/* main .title {
-    transform: translate(0, -15px);
-} */
 
 main .resume-header-wrapper {
     display: flex;
@@ -155,19 +74,6 @@ main .resume-header-wrapper {
     gap: 5px;
 }
 
-main .resume-a {
-    border: 5px outset #FCDE8B;
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.2s;
-}
-
-main .resume-a:hover {
-    /* border: 5px inset #cfdfcd; */
-    transform: scale(1.03);
-    transition: 0.2s;
-    background-color: #FACE55;
-}
 
 main section {
     align-self: center;
@@ -226,55 +132,46 @@ main .education {
 
 table,
 th,
-td{
+td {
     padding: 10px;
     border: solid 1px;
 }
+
 /* Main Container Styling Ends */
 
-/* Footer Container Styling Starts */
-footer {
-    align-self: center;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    width: 60%;
+@media (max-width: 500px) {
+    :root {
+        --anchor-font-size-link: 1rem;
+        --font-size: 1.05rem;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    body .wrapper {
+        padding: 20px 16px;
+        height: auto;
+    }
+
+
+    .resume-header-wrapper {
+        margin-top: -10px;
+    }
+
+    .resume-header-wrapper h1 {
+        display: none;
+    }
+
+    main section {
+        width: 100%;
+        gap: 16px;
+        margin-bottom: 8px;
+        padding: 20px 10px;
+    }
+
+    main .education {
+        padding-bottom: 50px;
+    }
 }
-
-footer h2 {
-    margin-bottom: 40px;
-}
-
-footer .personal-info {
-    display: grid;
-    grid-template-columns: 30px 10px 230px;
-    grid-template-rows: repeat(3, 30px);
-    gap: 2px;
-    margin-bottom: 30px;
-    margin-left: 70px;
-    justify-items: start;
-}
-
-footer .personal-info .span-info {
-    grid-column: 1;
-    justify-self: center;
-}
-
-footer .personal-info span img {
-    width: 20px;
-    height: 20px;
-}
-
-footer .personal-info .span-semicolon {
-    grid-column: 2;
-
-}
-
-footer .personal-info a {
-    font-weight: 800;
-}
-
-/* Footer Container Styling Ends */
