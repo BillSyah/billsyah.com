@@ -1,0 +1,111 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin: 50px 0 60px 0;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 20px;
+}
+
+/* Logo Container Animation Starts */
+header .logo .heading-first-name {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    transition: 0.8s;
+}
+
+header .logo .heading-first-name:hover {
+    width: 100%;
+    padding-left: 140px;
+}
+
+header .logo .heading-last-name {
+    margin: 0;
+    padding: 0 0 0 50px;
+    transition: padding 0.8s;
+}
+
+header .logo .heading-last-name:hover {
+    padding: 0 75px 0 0;
+}
+
+header .heading-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 160px;
+    gap: 10px;
+    font-size: var(--anchor-font-size-link);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+header .heading-nav .nav-wrapper a {
+    transition: transform 0.2s ease;
+    padding-bottom: 2px;
+    width: 70px;
+}
+
+header nav a:hover {
+    transform: scale(1.10);
+    font-size: large;  
+}
+
+
+@media(max-width: 500px) {
+
+    :root {
+        --anchor-font-size-link: 1rem;
+        --font-size: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px !important;
+        padding-top: 10px;
+    }
+
+    header .logo {
+        width: 100%;
+        font-size: 22px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+
+    header .logo .heading-first-name,
+    header .logo .heading-last-name {
+        padding: 0 !important;
+        transition: none !important;
+    }
+
+    .heading-nav {
+        font-size: var(--anchor-font-size-link);
+        gap: 16px;
+        bottom: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header .heading-nav .nav-wrapper {
+        height: auto;
+        top: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    header .heading-nav .nav-wrapper .navigation,
+    header .heading-nav .nav-wrapper.home .navigation {
+        box-shadow: none !important;
+        bottom: 0 !important; 
+    } 
+}

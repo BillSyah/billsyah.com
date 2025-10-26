@@ -1,0 +1,177 @@
+:root {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    --anchor-font-size-link: 1.2rem;
+    --font-size: 1.1rem;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.83);
+    font-size: var(--font-size);
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* reset basic styling */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Parent Container Styling Starts */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(248, 241, 230, 0.98);
+    color: rgba(0, 0, 0, 0.83);
+    width: 100%;
+    min-height: 75%;
+    max-height: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+body .wrapper {
+    margin: 0.5rem;
+    padding: 15px 15%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+/* Parent Container Styling Ends */
+
+
+/* Main Container Styling Starts */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+main p,
+main span,
+main h4,
+main h5,
+main li {
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+
+
+main .resume-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 5px;
+}
+
+
+main section {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    border-top: solid 1.3px;
+    width: 68%;
+    padding: 20px 20px 55px 20px;
+}
+
+main section:hover {
+    /* background-color: rgb(153, 209, 151); */
+    background-color: #EAEEDC;
+}
+
+main section h2 {
+    font-size: 1.4rem;
+}
+
+main span {
+    display: block;
+}
+
+main .contact-info-wrapper {
+    height: 100%;
+}
+
+main .contact-info-wrapper .contact-info-grid {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 65px 10px 200px;
+    grid-template-rows: repeat(3, 30px);
+}
+
+main .professional-experience h4 {
+    font-size: 1.2rem;
+}
+
+main .professional-experience #experience-1 {
+    margin-bottom: 20px;
+}
+
+main .education table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main .education {
+    border-bottom: solid 1.3px;
+}
+
+table,
+th,
+td {
+    padding: 10px;
+    border: solid 1px;
+}
+
+/* Main Container Styling Ends */
+
+@media (max-width: 500px) {
+    :root {
+        --anchor-font-size-link: 1rem;
+        --font-size: 1.05rem;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    body .wrapper {
+        padding: 20px 16px;
+        height: auto;
+    }
+
+
+    .resume-header-wrapper {
+        margin-top: -10px;
+    }
+
+    .resume-header-wrapper h1 {
+        display: none;
+    }
+
+    main section {
+        width: 100%;
+        gap: 16px;
+        margin-bottom: 8px;
+        padding: 20px 10px;
+    }
+
+    main .education {
+        padding-bottom: 50px;
+    }
+}
