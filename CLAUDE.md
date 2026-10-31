@@ -26,8 +26,13 @@ Navigation between pages uses plain `<a href="/">` / `<a href="/resume/">` links
 
 **Assets.** Images are imported through JS (`import myImage from './assets/profile.png'`) so Vite fingerprints them. Footer icons are inlined as base64 data URIs.
 
+`public/` is copied verbatim to the build root. `resume.pdf` lives there and is linked as `/resume.pdf`, not imported. Note that `.gitignore` lists `resume.pdf`, so updating it requires `git add -f public/resume.pdf`.
+
+## CI/CD
+
+`.github/workflows/deploy.yml` builds on every push and PR to `main`. Pushes to `main` also deploy: the job rsyncs `dist/` (with `--delete`) over SSH to a DigitalOcean Droplet served by nginx. Deploy config comes from repo secrets: `SSH_PRIVATE_KEY`, `SSH_KNOWN_HOSTS`, `SSH_HOST`, `SSH_USER`, `DEPLOY_PATH` and an optional `SSH_PORT`. The deploy job runs in the `production` GitHub environment.
+
 ## Known issues / gotchas
 
-- **The build currently fails.** `src/components/ResumeDownload.js` imports `../assets/resume.pdf`, but `.gitignore` excludes `resume.pdf`, and the only tracked copy is `public/resume.pdf`. Either put a copy at `src/assets/resume.pdf` or change the link to the public path `/resume.pdf` (no import).
 - The `<link rel="stylesheet">` and favicon paths in `index.html` (`style/index.css`, `./assets/img/...`) and `resume/index.html` (`./src/styles/resume.css`) point to files that don't exist. Vite only warns about them, and styles reach the page through JS imports anyway.
 - `src/components/PersonalLink.js` is an older version of `LinkFooter.js` and isn't imported anywhere.
