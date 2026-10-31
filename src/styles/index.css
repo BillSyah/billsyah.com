@@ -21,7 +21,7 @@ p {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(248, 241, 230, 0.98);
+  background-color: #fffffa;
   color: rgba(0, 0, 0, 0.83);
   width: 100vw;
   min-height: 75vh;
@@ -106,14 +106,14 @@ main .container-introduction .container-paragraph a {
   font-weight: 700;
 }
 
-
-main section:hover {
-  background-color: #EAEEDC;
-  border-radius: 5px;
+main .container-introduction .container-paragraph a:hover {
+  color: #008f03;
 }
 
-main section p a:hover {
-  color: rgb(13, 17, 255);
+
+main section:hover {
+  background-color: #f3f5ea;
+  border-radius: 5px;
 }
 
 
@@ -171,6 +171,6 @@ main section p a:hover {
   }
 
   section p a {
-        color: rgb(27, 30, 179);
+        color: #008f03;
     }
 }
