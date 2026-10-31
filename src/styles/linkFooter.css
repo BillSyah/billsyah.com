@@ -29,8 +29,8 @@ footer .personal-info a {
 
 
 footer .personal-info a:hover {
-    background-color: #DAE2D3;
-    color: rgb(13, 17, 255);
+    background-color: #eafbda;
+    color: #008f03;
     transform: scale(1.04);
     transition: transform 0.3s;
     /* padding: add more animation for this so when user hover they see something moving  */
