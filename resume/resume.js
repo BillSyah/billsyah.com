@@ -22,13 +22,12 @@ document.querySelector('#app').innerHTML = `
 
             <!-- Objective -->
             <section class="objective">
-                <h2>Career Objective</h2>
-                <p> 
-                    A recent graduate from Oakland University with B.S. in Computer Science. During school, 
-                    I developed interest and build my skill towards full-stack web development. I’m pursuing
-                    the AWS Solutions Architect certification to expand my expertise in designing scalable 
-                    and secure applications. I value my creativity to solve problems, collaborate with team,
-                    and building solution that benefits both the user and organizations effectively 
+                <h2>Summary</h2>
+                <p>
+                    Full-stack software engineer at American Airlines with a B.S. in Computer Science from
+                    Oakland University. I build and maintain pilot-facing web applications and backend services
+                    with Angular, Java and Spring Boot on Azure, and I build AI-powered CI/CD workflows that
+                    automate code quality and security fixes.
                 </p>
                 </section>
 
@@ -37,29 +36,39 @@ document.querySelector('#app').innerHTML = `
 
                 <h2>Professional Experience</h2>
 
-                <div id="experience-1">
-                    <h4>Network Engineer — Internship</h4>
-                    <h5>September 2023 - Present — Oakland University, Rochester Hills, Michigan</h5>
+                <div id="experience-aa">
+                    <h4>Senior Associate Software Engineer</h4>
+                    <h5>November 2025 - Present — American Airlines, Dallas–Fort Worth, TX</h5>
                     <ul>
-                        <li>Installing and configuring new network switches, ethernet cables, fiber optics and SFPs, and
-                            Access Points <br> to replace and modernize equipment.</li>
-                        <li>Maintaining connectivity of about 500+ IoT devices within university peripherals resulting in reliable, efficient, <br>
-                            and seamless data exchange across the network.</li>
-                        <li>Collaborating with the school network engineers on advanced tasks, such as network routing,
-                            upscale data center topology <br> and diagrams, and transitioning Oakland University’s WiFi from WiFi 5 to WiFi 6E, increasing
-                            the data transmission speed <br> average from 250Mbps to 700Mbps.</li>
+                        <li>Lead frontend development for the pilot portal used by American Airlines pilots to manage their
+                            schedule (Angular, Java, Spring Boot, Azure).</li>
+                        <li>Drove the portal’s upgrade across 8 major Angular versions (14 to 22) in under a year, shipping
+                            incrementally through production releases while delivering feature work.</li>
+                        <li>Designed AI-powered GitHub workflows that automatically fix code quality issues and vulnerable
+                            dependencies on pull requests; piloted on my team and centralized into a shared repository for
+                            adoption across teams.</li>
+                        <li>Own production releases and hotfixes for the portal, and reviewed 170+ pull requests across 7
+                            repositories in my first year.</li>
+                    </ul>
+                </div>
+
+                <div id="experience-1">
+                    <h4>Network Engineer Intern</h4>
+                    <h5>September 2023 - May 2025 — Oakland University, Rochester Hills, MI</h5>
+                    <ul>
+                        <li> Installed and configured network switches, access points, fiber and SFPs to modernize campus network equipment.</li>
+                        <li>Troubleshot and installed cabling and wiring to keep 500+ IoT devices across campus connected to the network.</li>
+                        <li>Provisioned Cisco phones and virtual phone access for campus staff, including setting up, editing and resetting accounts and PINs.</li>
                     </ul>
                 </div>
 
                 <div id="experience-2">
                     <h4>Research Assistant — Dr. Jing Shu Chen</h4>
-                    <h5>March 2024 - June 2024 — Oakland University, Rochester Hills, Michigan</h5>
+                    <h5>March 2024 - June 2024 — Oakland University, Rochester Hills, MI</h5>
                     <ul>
-                        <li>Collaborated on developing a functional full-stack web application for visualizing data
-                            analytics in healthcare databases. Technologies used: React, Firebase, Express, React
-                            Router, Bootstrap.</li>
-                        <li>Designed and iterated the UI/UX in Figma, resulting in an enhanced user experience and
-                            increased user satisfaction with the app. </li>
+                        <li>Co-developed a full-stack web app for visualizing healthcare data analytics (React, Express,
+                            Firebase, Bootstrap).</li>
+                        <li>Designed and iterated the app’s UI/UX in Figma.</li>
                     </ul>
                 </div>
 
@@ -76,26 +85,36 @@ document.querySelector('#app').innerHTML = `
                     </ul>
                 </div>
                 <div id="project-2">
-                    <h4>Firebase Authentication System</h4>
+                    <h4>BillSyah.com — Portfolio Website</h4>
                     <ul>
-                        <li>Created a responsive web application that allows users to log in securely using OAuth authentication.</li>
-                        <li>Utilized Firebase Authentication for backend login management and implemented a React + Bootstrap frontend for a seamless user experience.</li>
-                        <li>Applied best practices for OAuth integration to ensure secure user sessions and smooth navigation.</li>
+                        <li>Built a personal portfolio website with Vite to showcase my projects and experience.</li>
+                        <li>Deployed the site on a DigitalOcean Droplet with NGINX and a GitHub Actions CI/CD pipeline.</li>
                     </ul>
                 </div>
-                <div id="project-3">
-                    <h4>Weather App</h4>
-                    <ul>
-                        <li>Built a responsive web application that enables users to search and view live weather data from any location worldwide.</li>
-                        <li>Integrated the Visual Crossing Weather API to fetch real-time conditions and displayed results dynamically using HTML, CSS, JavaScript, and Webpack.</li>
-                    </ul>
-                </div>
+            </section>
+
+            <!-- Technical Skills -->
+            <section class="skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li><b>Languages:</b> Java, TypeScript, JavaScript, Python, SQL, HTML, CSS</li>
+                    <li><b>Frameworks & Libraries:</b> Spring Boot, Angular, FastAPI, Node.js, Express.js, React, Bootstrap</li>
+                    <li><b>Databases:</b> MySQL, MongoDB, Firebase</li>
+                    <li><b>Cloud & DevOps:</b> Azure, AWS, DigitalOcean, Docker, Kubernetes, Terraform, GitHub Actions, NGINX</li>
+                    <li><b>APIs & Tools:</b> REST APIs, OAuth, JWT, Git, GitHub, GitHub Copilot, SonarQube, Postman</li>
+                </ul>
+            </section>
+
+            <!-- Certifications -->
+            <section class="certifications">
+                <h2>Certifications</h2>
+                <h4>AWS Certified Cloud Practitioner ● September 2025</h4>
             </section>
 
             <!-- Education -->
             <section class="education">
                 <h2>Education</h2>
-                <h4>BS Computer Science, Oakland University, Rochester Hills, MI ● 2023 - 2025</h4>
+                <h4>B.S. Computer Science, Oakland University, Rochester Hills, MI ● May 2025</h4>
             </section>
 
 
